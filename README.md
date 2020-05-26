@@ -1,3 +1,3 @@
 # Config
-Works with ini-file.
+Works with INI-file.
 Uses function ```parse_ini_file()```
