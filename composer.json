@@ -1,0 +1,20 @@
+{
+    "name": "mar4ehk0/Config",
+    "description": "Works with INI-files",
+    "homepage": "https://github.com/mar4ehk0/Config",
+    "authors": [
+        {
+            "name": "Alexey Marchenko",
+            "email": "email@example.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marchenko\\": "src"
+        }
+    }
+}
