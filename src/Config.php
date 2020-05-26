@@ -8,11 +8,20 @@ class Config
   // /path/to/file/filename
   protected $path_to_file;
 
+  /**
+   * Config constructor.
+   *
+   * @param string $path
+   */
   public function __construct(string $path) {
     $this->path_to_file = $path;
   }
 
-  protected function getParam(string $paramName) {
+  /**
+   * @param string $paramName
+   * @return bool|mixed
+   */
+  public function get(string $paramName) {
     $file = parse_ini_file($this->path_to_file, FALSE, INI_SCANNER_TYPED);
     if (empty($file)) {
       return FALSE;
